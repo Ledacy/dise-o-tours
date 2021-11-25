@@ -1,0 +1,77 @@
+#mainMenu div>ul>li>a {
+    color: #ffffff !important;
+    font-weight: 100 !important;
+    font-family: titulo !important;
+    font-size: 14px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#mainMenu div>ul>li>a:hover {
+    color: #ffffff;
+    font-weight: 200;
+    background-color: #083c61;
+    transition: 0.5s;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#mainMenu div>ul>li>a .link-1 {
+    color: #083c61;
+    font-weight: bold !important;
+    font-family: titulo;
+}
+
+/* #mainMenu div>ul>li>a .link-1:hover{
+    font-weight: bolder;
+    background-color: #ffffff !important;
+    transition: 0.5s;
+    padding-top: 1px;
+    padding-bottom: 1px;                                    
+
+} */
+/* #nav-1{
+    color: #083c61 !important;
+} */
+#nav-1 :hover {
+    background-color: #ffffff !important;
+    transition: 0.5s;
+    font-family: titulo !important;
+    font-weight: bold !important;
+}
+.drop {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    font-family: titulo;
+    background-color: #083c618c;
+    width: 250%;
+    line-height: 10px;
+    z-index: 1;
+    font-size: 15px;
+    border: none !important;
+}
+
+.drop-content a {
+    color: white;
+    padding: 15px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover {
+    background-color: #0e3261
+}
+
+.drop:hover .drop-content {
+    display: block;
+}
+
+.drop:hover .dropbtn {
+    background-color: #083c61;
+}

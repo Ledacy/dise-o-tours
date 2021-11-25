@@ -1,0 +1,21 @@
+.map{
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+@media (min-width: 900px) {
+    .map{
+        width: 100%;
+        height: 350px;
+        border: none;
+    }   
+    
+}
+@media (min-width: 1200px) {
+    .map{
+        width: 400px;
+        height: 300px;
+        border: none;
+    }   
+    
+}
