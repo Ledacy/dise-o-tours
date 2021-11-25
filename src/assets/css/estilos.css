@@ -28,6 +28,10 @@
   font-family: text;
   color: black;
 }
+.text-gris{
+  color: #787878 !important;
+  font-weight: bold;
+}
 .line{
   line-height: 150%;
   font-weight: bolder;

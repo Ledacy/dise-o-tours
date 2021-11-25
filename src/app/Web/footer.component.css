@@ -19,3 +19,24 @@
     }   
     
 }
+.img-footer{
+    margin-bottom: -2px; 
+    background-size: cover;
+}
+.bg-footer{
+    background-color: #2A2E49;
+  }
+.mg-f1{
+    margin-top: -1%;
+}
+.mg-f2{
+    margin-top: -2%;
+}
+
+.fondo-footer{
+    background-image: url("../../assets/image/resources/footer.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
