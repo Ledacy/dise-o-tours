@@ -53,6 +53,7 @@ $('#carousel div').hover(function() {
 // $('#next').click(function() {
 //   moveToSelected('next');
 // });
+
 //  document.getElementById('#carousel div').addEventListener('hover', function() {
 //  document.getElementById('#text-1').classList.toggle('hide');
 // })

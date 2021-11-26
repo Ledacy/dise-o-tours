@@ -19,7 +19,7 @@
 }
 
 .margen-1 {
-  margin-top: -8%;
+  margin-top: -17%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -154,7 +154,7 @@ width: 100%;
 }
 
 .fondo-1{
-  background-image: url("../../assets/image/resources/fondo.png");
+  background-image: url("../../assets/image/resources/fondo-2.png");
   /* background-image: url("../images/resources/fondo.png"); */
   background-color: transparent;
   background-position: center;
