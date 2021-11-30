@@ -7,7 +7,14 @@
   border-radius: 10px;
   z-index: 2100;
 }
-
+.espacio-1{
+  margin-top: 25%;
+}
+/* @media only screen and (min-width: 320px) and (max-width: 768px){
+  .espacio-1{
+    margin-top: 50px;
+  }
+} */
 .width-1 {
   width: 13%;
 }
@@ -29,7 +36,7 @@
 }
 /* estilos del carouesel */
 #carousel {
-  /* margin-top: 20%; */
+  margin-top: 0;
   position: relative;
   height: 650px;
   transform: translateY(-50%);
@@ -37,7 +44,16 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
   #carousel {
-    /* margin-top: 20%; */
+    margin-top: 50%;
+    position: relative;
+    height: 550px;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px){
+  #carousel {
+    margin-top: 80%;
     position: relative;
     height: 550px;
     transform: translateY(-50%);
