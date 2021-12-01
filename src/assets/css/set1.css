@@ -33,6 +33,11 @@
 	text-align: center;
 	cursor: pointer;
 }
+@media only screen and (min-width: 310px) and (max-width: 768px){
+	.grid figure {
+		width: 85%;
+	}
+}
 /* #prueba-1{
 	min-width: 150px;
 	max-width: 420px !important;

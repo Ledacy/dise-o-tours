@@ -24,18 +24,28 @@
     width: 20%;
   }
 }
+@media only screen and (min-width: 310px) and (max-width: 768px){
+  .width-1 {
+    width: 29.5%;
+  }
+}
 /* inicio margenes para los carrouseles */
 .margen-c1{
   margin-top: -7% !important;
 }
+@media only screen and (min-width: 1025px) and (max-width: 1380px){
+  .margen-c1{
+    margin-top: 0 !important;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .margen-c1{
-    margin-top: 30% !important;
+    margin-top: 45% !important;
   }
 }
 @media only screen and (min-width: 310px) and (max-width: 768px) {
   .margen-c1{
-    margin-top: 50% !important;
+    margin-top: 70% !important;
   }
 }
 
@@ -47,24 +57,28 @@
     margin-top: 10% !important;
   }
 }
-@media only screen and (min-width: 310px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   .margen-c2{
-    margin-top: 60% !important;
+    margin-top: 90% !important;
   }
 }
 
 .margen-1 {
   margin-top: -10%;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1025px) and (max-width: 1380px){
   .margen-1 {
-    margin-top: -22%;
+    margin-top: -15%;
   }
 }
-@media only screen and (min-width: 310px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .margen-1 {
-    margin-top: -40%;
+    margin-top: -23%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .margen-1 {
+    margin-top: -70%;
   }
 }
 /* final margenes para los carrouseles */
@@ -232,7 +246,11 @@ width: 100%;
  .pading-carrousel{
   margin-top: -18%;
 }
-
+@media only screen and (min-width: 1025px) and (max-width: 1380px){
+  .pading-carrousel{
+    margin-top: -27%;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   .pading-carrousel{
     margin-top: -32%;
@@ -258,7 +276,7 @@ width: 100%;
 }
 @media only screen and (min-width: 310px) and (max-width: 768px){
   .card-1 {
-    width: 75%;
+    width: 85%;
     height: auto;
   }
 }
@@ -295,23 +313,28 @@ width: 100%;
   line-height: 70%;
   transition: 0.25s;
 }
-@media only screen and (min-width: 1024px) and (max-width: 1366px){
+@media only screen and (min-width: 1025px) and (max-width: 1224px){
   .card-1 figcaption {
-    bottom: -15%;
+    bottom: -21%;
+  }
+}
+@media only screen and (min-width: 1225px) and (max-width: 1366px){
+  .card-1 figcaption {
+    bottom: -16%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   .card-1 figcaption {
-    bottom: -17%;
+    bottom: -20%;
   }
 }
 @media only screen and (min-width: 310px) and (max-width: 768px){
   .card-1 figcaption {
-    bottom: -12%;
+    bottom: -17.5%;
   }
 }
 .card-1 figcaption h3 {
-  margin: 0 0 10px;
+  margin: -2px 10px;
   padding: 0;
   font-weight: 950 !important;
   font-size: 17px;
@@ -324,7 +347,7 @@ width: 100%;
 }
 .card-1 figcaption button {
   z-index: 1;
-  margin: 5px 0 0;
+  margin: 10px 0 0;
   padding: 5px 20px;
   background-color: #083C61;
   border: none;
