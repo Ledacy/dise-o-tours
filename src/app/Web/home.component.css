@@ -24,27 +24,63 @@
     width: 20%;
   }
 }
-
-.margen-1 {
-  margin-top: -17%;
+/* inicio margenes para los carrouseles */
+.margen-c1{
+  margin-top: -7% !important;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .margen-1 {
-    margin-top: -12%;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .margen-c1{
+    margin-top: 30% !important;
   }
 }
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+  .margen-c1{
+    margin-top: 50% !important;
+  }
+}
+
+.margen-c2{
+  margin-top: 4% !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .margen-c2{
+    margin-top: 10% !important;
+  }
+}
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+  .margen-c2{
+    margin-top: 60% !important;
+  }
+}
+
+.margen-1 {
+  margin-top: -10%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .margen-1 {
+    margin-top: -22%;
+  }
+}
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+  .margen-1 {
+    margin-top: -40%;
+  }
+}
+/* final margenes para los carrouseles */
+
 /* estilos del carouesel */
 #carousel {
-  margin-top: 0;
+  /* margin-top: 0; */
   position: relative;
   height: 650px;
   transform: translateY(-50%);
   overflow: hidden;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px){
   #carousel {
-    margin-top: 50%;
+    /* margin-top: 50%; */
     position: relative;
     height: 550px;
     transform: translateY(-50%);
@@ -53,7 +89,7 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 768px){
   #carousel {
-    margin-top: 80%;
+    /* margin-top: 80%; */
     position: relative;
     height: 550px;
     transform: translateY(-50%);
@@ -192,7 +228,22 @@ width: 100%;
   position: relative;
 }
 /* efectos card */
+ /* margenes de las tarjetas (card) */
+ .pading-carrousel{
+  margin-top: -18%;
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .pading-carrousel{
+    margin-top: -32%;
+  }
+}
+@media only screen and (min-width: 310px) and (max-width: 768px){
+  .pading-carrousel{
+    margin-top: -5%;
+  }
+}
+ /* final de margenes de las tarjetas (card) */
 .card-1 {
   position: relative;
   display: flex;
@@ -204,6 +255,12 @@ width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.138);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
+}
+@media only screen and (min-width: 310px) and (max-width: 768px){
+  .card-1 {
+    width: 75%;
+    height: auto;
+  }
 }
 .card-1:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -228,14 +285,30 @@ width: 100%;
 .card-1 img {
   transition: 0.25s;
 }
+
 .card-1 figcaption {
   position: absolute;
-  bottom: -15%;
+  bottom: -10%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.337);
   color: white;
   line-height: 70%;
   transition: 0.25s;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+  .card-1 figcaption {
+    bottom: -15%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .card-1 figcaption {
+    bottom: -17%;
+  }
+}
+@media only screen and (min-width: 310px) and (max-width: 768px){
+  .card-1 figcaption {
+    bottom: -12%;
+  }
 }
 .card-1 figcaption h3 {
   margin: 0 0 10px;
