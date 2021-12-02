@@ -306,16 +306,16 @@ width: 100%;
 
 .card-1 figcaption {
   position: absolute;
-  bottom: -10%;
+  bottom: -12%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.337);
   color: white;
   line-height: 70%;
   transition: 0.25s;
 }
-@media only screen and (min-width: 1025px) and (max-width: 1224px){
+@media only screen and (min-width: 1225px) and (max-width: 1550px){
   .card-1 figcaption {
-    bottom: -21%;
+    bottom: -15%;
   }
 }
 @media only screen and (min-width: 1225px) and (max-width: 1366px){
@@ -323,9 +323,14 @@ width: 100%;
     bottom: -16%;
   }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1224px){
+  .card-1 figcaption {
+    bottom: -21%;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   .card-1 figcaption {
-    bottom: -20%;
+    bottom: -17%;
   }
 }
 @media only screen and (min-width: 310px) and (max-width: 768px){

@@ -1,27 +1,54 @@
-#mainMenu div>ul>li>a {
+#mainMenu ul>li>a {
     color: #ffffff !important;
     font-weight: 100 !important;
     font-family: titulo !important;
     font-size: 14px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-
-#mainMenu div>ul>li>a:hover {
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    #mainMenu ul>li>a {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+#mainMenu ul>li>a:hover {
     color: #ffffff;
     font-weight: 200;
     background-color: #083c61;
-    transition: 0.5s;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    /* transition: 0.5s; */
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-#mainMenu div>ul>li>a .link-1 {
+#mainMenu ul>li>a .link-1 {
     color: #083c61;
     font-weight: bold !important;
     font-family: titulo;
 }
-
+.pading-navbar{
+   padding: 0 15%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .pading-navbar{
+        padding: 0 8%;
+     } 
+}
+.margin-carrousel{
+    margin-top: -10%;
+    z-index: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .margin-carrousel{
+        margin-top: -15%;
+    }
+}
+@media only screen and (min-width: 310px) and (max-width: 768px){
+    .margin-carrousel{
+        margin-top: -21.5%;
+    }
+}
 /* #mainMenu div>ul>li>a .link-1:hover{
     font-weight: bolder;
     background-color: #ffffff !important;
@@ -77,7 +104,12 @@
 }
 .text-header{
     margin-top: -25px !important; 
-    margin-left: 30% !important; 
+    margin-left: 18.5% !important; 
     position: absolute; 
     color: #083c61 ;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .text-header{
+        margin-left: 28.5% !important; 
+    }
 }
