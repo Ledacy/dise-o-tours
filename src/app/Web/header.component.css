@@ -108,6 +108,11 @@
     position: absolute; 
     color: #083c61 ;
 }
+@media only screen and (min-width: 1025px) and (max-width: 1380px){
+    .text-header{
+        margin-left: 25.5% !important; 
+    }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .text-header{
         margin-left: 28.5% !important; 
