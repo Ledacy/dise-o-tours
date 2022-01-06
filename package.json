@@ -30,6 +30,7 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "angular-responsive-carousel": "^2.1.1",
     "bootstrap": "^4.4.1",
+    "flickity": "^2.3.0",
     "jquery": "^3.6.0",
     "ngx-scrollreveal": "^3.0.0",
     "rxjs": "^6.5.5",

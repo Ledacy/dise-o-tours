@@ -72,6 +72,7 @@ import { MonedaFormatoPipe } from './monedaFormato.pipe';
 import { StoreFirstGuard } from './storeFirst.guard';
 import { HomeWebComponent } from './Web/home.component';
 import { ToursWebComponent } from './Web/tours.component';
+import { ContactWebComponent } from './Web/contact.component';
 import { FooterWebComponent } from './Web/footer.component';
 import { HeaderWebComponent } from './Web/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -79,7 +80,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderPagesComponent, HeaderComponent, HabitacionesComponent, TotalSeleccionHabPipe, TotalHabitacionesPipe, TotalHuepedesHabPipe, MonedaFormatoPipe,
+    AppComponent, HeaderPagesComponent, HeaderComponent, HabitacionesComponent, TotalSeleccionHabPipe, TotalHabitacionesPipe, TotalHuepedesHabPipe, MonedaFormatoPipe, ContactWebComponent,
     CheckOutComponent, ProcessDialogComponent, DetalleOrdenComponent, DisponibilidadDialogComponent, HomeWebComponent, ToursWebComponent, FooterWebComponent, HeaderWebComponent,
   ],
   imports: [
@@ -108,6 +109,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     RouterModule.forRoot([
       { path: "home", component: HomeWebComponent },
       { path: "tours", component: ToursWebComponent },
+      { path: "contact", component: ContactWebComponent },
       { path: "booking/:checkIn/:checkOut/:nroPersonas", component: HabitacionesComponent }, 
       { path: "checkout", component: CheckOutComponent, canActivate: [StoreFirstGuard] },
       { path: "orden-detail", component: DetalleOrdenComponent, canActivate: [StoreFirstGuard] },

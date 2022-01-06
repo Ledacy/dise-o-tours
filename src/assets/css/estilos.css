@@ -4,6 +4,9 @@
   font-style: normal;
   font-weight: 300;
 }
+.bg-none{
+  background-color: transparent !important;
+}
 .titulo{
   font-family: titulo !important;
   color: #083C61;
