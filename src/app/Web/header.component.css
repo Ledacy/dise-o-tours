@@ -1,59 +1,71 @@
 #mainMenu ul>li>a {
-    color: #ffffff !important;
-    font-weight: 100 !important;
-    font-family: titulo !important;
-    font-size: 14px;
+  color: #ffffff !important;
+  font-weight: 100 !important;
+  font-family: titulo !important;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #mainMenu ul>li>a {
+    font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    #mainMenu ul>li>a {
-        font-size: 12px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-}
+
 #mainMenu ul>li>a:hover {
-    color: #ffffff;
-    font-weight: 200;
-    background-color: #083c61;
-    /* transition: 0.5s; */
-    padding-top: 5px;
-    padding-bottom: 5px;
+  color: #ffffff;
+  font-weight: 200;
+  background-color: #083c61;
+  /* transition: 0.5s; */
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #mainMenu ul>li>a .link-1 {
-    color: #083c61;
-    font-weight: bold !important;
-    font-family: titulo;
-}
-.pading-navbar{
-   padding: 0 15%;
-}
-@media only screen and (min-width: 310px) and (max-width: 768px){
-    .pading-navbar{
-        padding: 0 2%;
-     } 
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .pading-navbar{
-        padding: 0 8%;
-     } 
+  color: #083c61;
+  font-weight: bold !important;
+  font-family: titulo;
 }
 
-/* .margin-carrousel{
-    margin-top: -10%;
-    z-index: 1;
+.pading-navbar {
+  padding: 0 15%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .margin-carrousel{
-        margin-top: -15%;
-    }
+
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+  .pading-navbar {
+    padding: 0 2%;
+  }
 }
-@media only screen and (min-width: 310px) and (max-width: 768px){
-    .margin-carrousel{
-        margin-top: -21.5%;
-    }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .pading-navbar {
+    padding: 0 8%;
+  }
+}
+
+.fixed-top-wonder {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.707);
+}
+
+.fixed-top-wonder-panel-visible {
+  visibility: visible !important;
+}
+/* @media only screen and (min-width: 768px) and (max-width: 1024px){
+    #panelMenu {
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 0%;
+        left: 0%;
+        visibility: hidden;
+        padding: 50px 50px 50px 0 !important;
+      } 
 } */
 /* #mainMenu div>ul>li>a .link-1:hover{
     font-weight: bolder;
@@ -67,60 +79,64 @@
     color: #083c61 !important;
 } */
 #nav-1 :hover {
-    background-color: #ffffff !important;
-    transition: 0.5s;
-    font-family: titulo !important;
-    font-weight: bold !important;
+  background-color: #ffffff !important;
+  transition: 0.5s;
+  font-family: titulo !important;
+  font-weight: bold !important;
 }
+
 .drop {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .drop-content {
-    display: none;
-    position: absolute;
-    font-family: titulo;
-    background-color: #083c618c;
-    width: 250%;
-    line-height: 10px;
-    z-index: 1;
-    font-size: 15px;
-    border: none !important;
+  display: none;
+  position: absolute;
+  font-family: titulo;
+  background-color: #083c618c;
+  width: 250%;
+  line-height: 10px;
+  z-index: 1;
+  font-size: 15px;
+  border: none !important;
 }
 
 .drop-content a {
-    color: white;
-    padding: 15px 12px;
-    text-decoration: none;
-    display: block;
+  color: white;
+  padding: 15px 12px;
+  text-decoration: none;
+  display: block;
 }
 
 .drop-content a:hover {
-    background-color: #0e3261
+  background-color: #0e3261
 }
 
 .drop:hover .drop-content {
-    display: block;
+  display: block;
 }
 
 .drop:hover .dropbtn {
-    background-color: #083c61;
+  background-color: #083c61;
 }
-.text-header{
-    margin-top: -25px !important; 
-    margin-left: 15% !important; 
-    position: absolute; 
-    color: #083c61 ;
+
+.text-header {
+  margin-top: -25px !important;
+  margin-left: 15% !important;
+  position: absolute;
+  color: #083c61;
 }
-@media only screen and (min-width: 1025px) and (max-width: 1380px){
-    .text-header{
-        margin-left: 17% !important; 
-    }
+
+@media only screen and (min-width: 1025px) and (max-width: 1380px) {
+  .text-header {
+    margin-left: 17% !important;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .text-header{
-        margin-left: 16% !important; 
-    }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text-header {
+    margin-left: 16% !important;
+  }
 }
