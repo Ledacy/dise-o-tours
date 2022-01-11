@@ -1,5 +1,5 @@
 #mainMenu ul>li>a {
-  color: #ffffff !important;
+  color: #ffffff;
   font-weight: 100 !important;
   font-family: titulo !important;
   font-size: 14px;
@@ -24,12 +24,14 @@
   padding-bottom: 5px;
 }
 
-#mainMenu ul>li>a .link-1 {
+#aboutusMenu .link-1 {
   color: #083c61;
   font-weight: bold !important;
   font-family: titulo;
 }
-
+#aboutusMenu .link-1:hover{
+  color: white !important;
+}
 .pading-navbar {
   padding: 0 15%;
 }
@@ -49,7 +51,23 @@
 .fixed-top-wonder {
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.707);
+  background-color: rgba(255, 255, 255, 0.871);
+}
+
+.negro{
+  color: black !important;
+  font-weight: bold;
+}
+.negro:hover{
+  color: white !important;
+}
+
+.activo {
+  color: #ffffff !important;
+  font-weight: 200;
+  background-color: #083c61;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .fixed-top-wonder-panel-visible {
@@ -79,7 +97,7 @@
     color: #083c61 !important;
 } */
 #nav-1 :hover {
-  background-color: #ffffff !important;
+  background-color: #ffffff;
   transition: 0.5s;
   font-family: titulo !important;
   font-weight: bold !important;
@@ -121,22 +139,21 @@
 .drop:hover .dropbtn {
   background-color: #083c61;
 }
-
 .text-header {
   margin-top: -25px !important;
-  margin-left: 15% !important;
+  margin-left: 14% !important;
   position: absolute;
   color: #083c61;
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1380px) {
   .text-header {
-    margin-left: 17% !important;
+    margin-left: 19% !important;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .text-header {
-    margin-left: 16% !important;
+    margin-left: 20.5% !important;
   }
 }

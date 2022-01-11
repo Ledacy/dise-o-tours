@@ -78,7 +78,6 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="assets/js/tevily.js"></script>
 
-  <script src="assets/js/popover.js"></script>
   <script src="assets/js/propio.js"></script>
   <script>
     // For Demo purposes only (show hover effect on mobile devices)
@@ -95,13 +94,37 @@
 
         var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        if (window.scrollY > 50 && width > 768) {
-          document.getElementById('mainMenu').classList.add('fixed-top-wonder','py-0');
+        if (window.scrollY > 700 && width > 768) {
+          document.getElementById('mainMenu').classList.add('fixed-top-wonder', 'py-0');
+
+          document.getElementById('logo-1').classList.add('d-none');
+          document.getElementById('logo-2').classList.remove('d-none');
+          document.getElementById('menu-1').classList.add('negro');
+          document.getElementById('menu-2').classList.add('negro');
+          document.getElementById('menu-3').classList.add('negro');
+          document.getElementById('menu-4').classList.add('negro');
+          document.getElementById('texto-1').classList.add('negro');
+          document.getElementById('idioma').classList.remove('text-white');
+
         } else {
-          document.getElementById('mainMenu').classList.remove('fixed-top-wonder','py-3');
+          document.getElementById('mainMenu').classList.remove('fixed-top-wonder', 'py-3');
+
+          document.getElementById('menu-1').classList.remove('negro');
+          document.getElementById('menu-2').classList.remove('negro');
+          document.getElementById('menu-3').classList.remove('negro');
+          document.getElementById('menu-4').classList.remove('negro');
+          document.getElementById('texto-1').classList.remove('negro');
+          document.getElementById('logo-1').classList.remove('d-none');
+          document.getElementById('logo-2').classList.add('d-none');
         }
       });
     });
+    // $(window).scroll(function (event) {
+    //   var scrollLeft = $(window).scrollLeft();
+    //   var scrollTop = $(window).scrollTop();
+    //   console.log("Vertical " + scrollTop);
+    //   console.log("Horizontal " + scrollLeft);
+    // });
 
   </script>
 </body>
