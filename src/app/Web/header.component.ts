@@ -14,12 +14,10 @@ export class HeaderWebComponent {
     constructor(private translate: TranslateService, @Inject(DOCUMENT) private document: Document){
 
     }
-
     setLanguage(lang: string){
         this.translate.use(lang);
         this.dataEvent.emit(lang); 
     }
-
     home(){
         this.document.location.href = '/#/home';
         //window.location.reload();

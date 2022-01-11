@@ -30,12 +30,18 @@
 .pading-navbar{
    padding: 0 15%;
 }
+@media only screen and (min-width: 310px) and (max-width: 768px){
+    .pading-navbar{
+        padding: 0 2%;
+     } 
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .pading-navbar{
         padding: 0 8%;
      } 
 }
-.margin-carrousel{
+
+/* .margin-carrousel{
     margin-top: -10%;
     z-index: 1;
 }
@@ -48,7 +54,7 @@
     .margin-carrousel{
         margin-top: -21.5%;
     }
-}
+} */
 /* #mainMenu div>ul>li>a .link-1:hover{
     font-weight: bolder;
     background-color: #ffffff !important;
@@ -104,17 +110,17 @@
 }
 .text-header{
     margin-top: -25px !important; 
-    margin-left: 18.5% !important; 
+    margin-left: 15% !important; 
     position: absolute; 
     color: #083c61 ;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1380px){
     .text-header{
-        margin-left: 25.5% !important; 
+        margin-left: 17% !important; 
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .text-header{
-        margin-left: 28.5% !important; 
+        margin-left: 16% !important; 
     }
 }

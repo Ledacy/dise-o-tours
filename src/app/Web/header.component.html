@@ -1,9 +1,9 @@
-<header class="container-fluid mb-0 px-0">
-  <nav class="navbar navbar-expand-md navbar-light" style="z-index: 10;">
-    <div class="container-fluid pading-navbar py-3 mx-auto">
-      <a class="navbar-brand" href="#"><img src="../../assets/image/resources/logo3.png" alt=""></a>
+<header class="container-fluid mb-0 px-0 fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light" style="z-index: 10;" id="mainMenu" >
+    <div class="container-fluid pading-navbar py-3">
+      <a class="navbar-brand" id="logoD" href="#"><img src="../../assets/image/resources/logo-4.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><i class="fas fa-align-justify text-white"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="mainMenu">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -25,29 +25,31 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">MACHUPICCHU</a>
+              <a class="nav-link" href="#Machupicchu">MACHUPICCHU</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">DESTINATIONS</a>
+              <a class="nav-link" href="#destinos">DESTINATIONS</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">REVIEWS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">BLOG</a>
-            </li>
+            </li> -->
             <div class="badge badge-dark titulo line-2 text-header d-md-block d-none" style="z-index: -15;">
               <i class="fas fa-phone-alt me-1"></i>
-                <small class="text-white fw-light"> Sales & Travel Support :</small> <span class="letter ms-1">+51 984754812</span>
+                <small class="text-white fw-light"> Sales & Travel Support :</small> <span class="letter ms-1">+51 925816256</span>
             </div>
             <li class="nav-item" id="nav-1" style="position: relative;">
-              <a class="nav-link link-1" style="color: #083c61 !important; font-weight: 100;" [routerLink]="['/contact']" routerLinkActive="router-link-active" >CONTACT US</a>
+              <a class="nav-link link-1" style="color: #083c61 !important; font-weight: bold !important;" [routerLink]="['/contact']" routerLinkActive="router-link-active">CONTACT US</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+  <div class="d-lg-block d-none py-5" id="panelMenu" style="height: 130px; width: 100%; position: fixed; top: 0%; left: 0%; background-color: #30110dcb; box-shadow: 0 12px 6px rgb(0 0 0 / 6%);visibility: hidden;"></div>
+
   <!-- <div class="container pt-3">
     <nav class="navbar navbar-expand-lg navbar-light px-4" id="mainMenu" style="z-index: 10;">
       <a class="navbar-brand" href="#"><img src="../../assets/image/resources/logo-4.png" alt=""></a>
@@ -92,7 +94,7 @@
       </div>
     </nav>
   </div> -->
-  <div id="carrousel-2" class="carousel slide carousel-fade margin-carrousel" data-bs-ride="carousel">
+  <!-- <div id="carrousel-2" class="carousel slide carousel-fade margin-carrousel" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../../assets/image/backgrounds/carrousel-1.jpg" class="d-block w-100" alt="...">
@@ -115,5 +117,5 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
 </header>
