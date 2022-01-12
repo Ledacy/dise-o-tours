@@ -162,7 +162,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     PortalModule,
     ScrollingModule,
   ],
-  providers: [ DatePipe, HabitacionesRepository, CheckOutRepository, StoreFirstGuard, MatDialog, {provide: MAT_DATE_LOCALE, useValue: 'es-PE'} ],
+  providers: [ DatePipe, HabitacionesRepository, CheckOutRepository, StoreFirstGuard, MatDialog, {provide: MAT_DATE_LOCALE, useValue: 'en-PE'} ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
