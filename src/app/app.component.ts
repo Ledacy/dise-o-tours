@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'MotorReservasA9';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('es');
+    translate.setDefaultLang('en');
   }
 }

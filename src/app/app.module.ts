@@ -72,6 +72,7 @@ import { MonedaFormatoPipe } from './monedaFormato.pipe';
 import { StoreFirstGuard } from './storeFirst.guard';
 import { HomeWebComponent } from './Web/home.component';
 import { ToursWebComponent } from './Web/tours.component';
+import { PaquetesWebComponent } from './Web/paquetes.component';
 import { ContactWebComponent } from './Web/contact.component';
 import { FooterWebComponent } from './Web/footer.component';
 import { HeaderWebComponent } from './Web/header.component';
@@ -81,7 +82,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent, HeaderPagesComponent, HeaderComponent, HabitacionesComponent, TotalSeleccionHabPipe, TotalHabitacionesPipe, TotalHuepedesHabPipe, MonedaFormatoPipe, ContactWebComponent,
-    CheckOutComponent, ProcessDialogComponent, DetalleOrdenComponent, DisponibilidadDialogComponent, HomeWebComponent, ToursWebComponent, FooterWebComponent, HeaderWebComponent,
+    CheckOutComponent, ProcessDialogComponent, DetalleOrdenComponent, DisponibilidadDialogComponent, HomeWebComponent, ToursWebComponent, FooterWebComponent, HeaderWebComponent, PaquetesWebComponent,
   ],
   imports: [
     BrowserModule,
@@ -109,6 +110,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     RouterModule.forRoot([
       { path: "home", component: HomeWebComponent },
       { path: "tours", component: ToursWebComponent },
+      { path: "paquetes", component: PaquetesWebComponent },
       { path: "contact", component: ContactWebComponent },
       { path: "booking/:checkIn/:checkOut/:nroPersonas", component: HabitacionesComponent }, 
       { path: "checkout", component: CheckOutComponent, canActivate: [StoreFirstGuard] },
@@ -162,7 +164,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     PortalModule,
     ScrollingModule,
   ],
-  providers: [ DatePipe, HabitacionesRepository, CheckOutRepository, StoreFirstGuard, MatDialog, {provide: MAT_DATE_LOCALE, useValue: 'en-PE'} ],
+  providers: [ DatePipe, HabitacionesRepository, CheckOutRepository, StoreFirstGuard, MatDialog, {provide: MAT_DATE_LOCALE, useValue: 'en-GB'} ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
