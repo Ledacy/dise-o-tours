@@ -2,10 +2,10 @@
   <header-web (dataEvent)='setLanguage($event)'></header-web>
   <div id="carrousel-2" class="carousel slide carousel-fade margin-carrousel" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <!-- <div class="carousel-item active">
         <img src="../../assets/image/backgrounds/carrousel-1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
+      </div> -->
+      <div class="carousel-item active">
         <img src="../../assets/image/backgrounds/carrousel-2.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
@@ -50,82 +50,82 @@
             <h2 class="titulo fw-bold mb-3 sonbra-1">$25</h2>
             <h2 class="titulo text-white sonbra-2 fw-bold">{{ 'home.destinos-1' | translate }}</h2>
             <p class="fst-italic fw-bold sonbra-3">{{ 'home.destinos-full' | translate }}</p>
-            <p class="fw-bold boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
+            <p class="boton mx-auto my-2"><a href="#" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
           </div>
-          <a href="#" class="fw-bold">View more</a>
+          <a [routerLink]="['/sietecolores']" class="fw-bold">View more</a>
         </figcaption>
       </figure>
       <figure class="effect-lily focus col-3 px-0">
         <img src="../../assets/image/paquetes/cinta-2.jpg" alt="img2" class="img-fluid" />
         <figcaption class="text-center">
           <div>
-            <h2 class="titulo fw-bold mb-3 sonbra-1">$25</h2>
+            <h2 class="titulo fw-bold mb-3 sonbra-1">WRP</h2>
             <h2 class="titulo fw-bold text-white sonbra-2">{{ 'home.destinos-2' | translate }}</h2>
             <p class="fst-italic fw-bold sonbra-3 text-uppercase">{{ 'home.destinos-full' | translate }}</p>
-            <p class="fw-bold boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
+            <p class="boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
           </div>
-          <a href="#">View more</a>
+          <a [routerLink]="['/lagunahuamantay']" >View more</a>
         </figcaption>
       </figure>
       <figure class="effect-lily focus col-3 px-0">
         <img src="../../assets/image/paquetes/cinta-3.jpg" class="img-fluid" alt="img3" />
         <figcaption class="text-center">
           <div>
-            <h2 class="titulo fw-bold mb-3 sonbra-1">$229</h2>
+            <h2 class="titulo fw-bold mb-3 sonbra-1">WRP</h2>
             <h2 class="titulo fw-bold text-white sonbra-2">{{ 'home.destinos-3' | translate }}</h2>
             <p class="fst-italic fw-bold sonbra-3 text-uppercase">{{ 'home.destinos-full' | translate }}</p>
-            <p class="fw-bold boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
+            <p class="boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
           </div>
-          <a href="#">View more</a>
+          <a [routerLink]="['/machupicchu']">View more</a>
         </figcaption>
       </figure>
       <figure class="effect-lily focus col-3 px-0">
         <img src="../../assets/image/paquetes/cinta-4.jpg" class="img-fluid" alt="img12" />
         <figcaption class="text-center">
           <div>
-            <h2 class="titulo fw-bold mb-3 sonbra-1">$140</h2>
-            <h2 class="titulo text-white fw-bold sonbra-2">{{ 'home.destinos-4' | translate }}</h2>
-            <p class="fst-italic color-1 fw-bold sonbra-3 text-uppercase">{{ 'home.destinos-full' | translate }}</p>
-            <p class="fw-bold boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
+            <h2 class="titulo fw-bold mb-3 sonbra-1">WRP</h2>
+            <h2 class="titulo text-white fw-bold sonbra-2" style="font-size: 17px; font-weight: bold !important;">{{ 'home.destinos-4' | translate }}</h2>
+            <p class="fst-italic color-1 fw-bold sonbra-3 text-uppercase">{{ 'home.2day' | translate }}</p>
+            <p class="boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
             ¿
           </div>
-          <a href="#">View more</a>
+          <a [routerLink]="['/huacachina']">View more</a>
         </figcaption>
       </figure>
       <figure class="effect-lily focus col-4 px-0" id="prueba-1">
         <img src="../../assets/image/paquetes/cinta-5.jpg" class="img-fluid" alt="img12" />
         <figcaption class="text-center">
           <div>
-            <h2 class="titulo fw-bold mb-3 sonbra-1">$270</h2>
+            <h2 class="titulo fw-bold mb-3 sonbra-1">WRP</h2>
             <h2 class="titulo text-white sonbra-2" style="font-size: 17px; font-weight: bold !important;">{{ 'home.destinos-5' | translate }}</h2>
             <p class="fst-italic fw-bold sonbra-3 text-uppercase">{{ 'home.destinos-duracion' | translate }}</p>
-            <p class="fw-bold boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
+            <p class="boton mx-auto my-2"><a type="button" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
           </div>
-          <a href="#">View more</a>
+          <a [routerLink]="['/tours']">View more</a>
         </figcaption>
       </figure>
       <figure class="effect-lily focus col-4 px-0" id="prueba-1">
         <img src="../../assets/image/paquetes/cinta-6.jpg" class="img-fluid" alt="img12" />
         <figcaption class="text-center">
           <div>
-            <h2 class="titulo fw-bold mb-3 sonbra-1">$300</h2>
+            <h2 class="titulo fw-bold mb-3 sonbra-1">WRP</h2>
             <h2 class="titulo fw-bold text-white sonbra-2">{{ 'home.destinos-6' | translate }}</h2>
             <p class="fst-italic fw-bold sonbra-3 text-uppercase">{{ 'home.destinos-duracion' | translate }}</p>
-            <p class="fw-bold boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
+            <p class="boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
           </div>
-          <a href="#">View more</a>
+          <a [routerLink]="['/salkantay2']">View more</a>
         </figcaption>
       </figure>
       <figure class="effect-lily focus col-4 px-0" id="prueba-1">
         <img src="../../assets/image/paquetes/cinta-7.jpg" class="img-fluid" alt="img12" />
         <figcaption class="text-center">
           <div>
-            <h2 class="titulo fw-bold mb-3 sonbra-1">$300</h2>
+            <h2 class="titulo fw-bold mb-3 sonbra-1">WRP</h2>
             <h2 class="titulo text-white fw-bold sonbra-2">{{ 'home.destinos-7' | translate }}</h2>
             <p class="fst-italic fw-bold sonbra-3 text-uppercase">{{ 'home.destinos-duracion' | translate }}</p>
-            <p class="fw-bold boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
+            <p class="boton mx-auto my-2"><a href="" style="color: white !important;">{{ 'home.destinos-boton' | translate }}</a></p>
           </div>
-          <a href="#">View more</a>
+          <a [routerLink]="['/real']">View more</a>
         </figcaption>
       </figure>
     </div>
@@ -193,10 +193,10 @@
     </article>
     <!-- final de servicios -->
   </section>
-  <section class="container-fluid px-5 py-lg-5 py-md-0 py-4">
+  <section class="container-fluid px-5 py-lg-5 py-md-0 py-5">
     <div class="col-12 text-center pt-lg-0 pt-md-4 pt-1 pb-2">
       <h1 class="titulo fw-bold">{{ 'home.fortalezas' | translate }}</h1>
-      <h2 class="titulo text-dark fw-bold fst-italic my-2">{{ 'home.fortalezas-estrellas' | translate }}</h2>
+      <h2 class="titulo text-dark fw-bold fst-italic mt-3 mb-5">{{ 'home.fortalezas-estrellas' | translate }}</h2>
     </div>
     <div class="row d-flex justify-content-center mb-5">
       <div class="col-lg-4 col-md-6 col-12 my-md-0 my-3">
@@ -215,9 +215,9 @@
           <div class="testimonial-one__top-revivew-box mb-3 mt-0">
             <img src="../../assets/image/resources/star.png" alt="">
           </div>
-          <h3 class="testimonial-one__client-name titulo fw-bold">{{ 'home.fortaleza-2' | translate }}</h3>
+          <h3 class="testimonial-one__client-name titulo fw-bold">{{ 'home.fortaleza-3' | translate }}</h3>
           <p class="testimonial-one__text text line letter-1 lh-sm">
-            {{ 'home.fortaleza-2-1' | translate }}
+            {{ 'home.fortaleza-3-1' | translate }}         
           </p>
         </div>
       </div>
@@ -226,9 +226,9 @@
           <div class="testimonial-one__top-revivew-box mb-3 mt-0">
             <img src="../../assets/image/resources/star.png" alt="">
           </div>
-          <h3 class="testimonial-one__client-name titulo fw-bold">{{ 'home.fortaleza-3' | translate }}</h3>
+          <h3 class="testimonial-one__client-name titulo fw-bold">{{ 'home.fortaleza-2' | translate }}</h3>
           <p class="testimonial-one__text text line letter-1 lh-sm">
-            {{ 'home.fortaleza-3-1' | translate }}         
+            {{ 'home.fortaleza-2-1' | translate }}
           </p>
         </div>
       </div>
@@ -252,9 +252,6 @@
           <h6 class="titulo fw-bold">{{ 'home.fortaleza-5' | translate }}</h6>
           <p class="testimonial-one__text text line letter-1 lh-sm">
             {{ 'home.fortaleza-5-1' | translate }}
-            <!-- En <span class="color-1 fw-bold">WONDER ROUTES PERÚ</span> tenemos un profundo respeto por nuestra cultura,
-            naturaleza y medio ambiente. Creemos en brindar un servicio responsable y de calidad preservando la imagen y
-            la arquitectura de nuestro patrimonio asi como las costumbres de nuestro pueblo. -->
           </p>
         </div>
       </div>
@@ -268,11 +265,11 @@
           <div class="hideLeft">
             <img src="/../../assets/image/carrousel/carrousel-1.jpg">
             <div class="container text-center mx-auto" id="text-1">
-              <a routerLink="/tours">
+              <a>
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-1' | translate }}</h5>
               </a>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.half-day' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.half-day' | translate }}</p>
+              <p class="text-center"><a type="button" routerLink="/citytour" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="hideLeft">
@@ -281,8 +278,8 @@
               <a href="tours.html">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-2' | translate }}</h5>
               </a>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/vallesagrado2']" routerLinkActive="router-link-active"  class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="prevLeftSecond">
@@ -291,72 +288,73 @@
               <a href="index.html">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-3' | translate }}</h5>
               </a>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/lagunahuamantay']" routerLinkActive="router-link-active"  class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="prev">
             <img src="/../../assets/image/carrousel/carrousel-4.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-4' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/sietecolores']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="selected">
             <img src="/../../assets/image/carrousel/carrousel-5.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-5' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/vallesagrado']" routerLinkActive="router-link-active"  class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="next">
             <img src="/../../assets/image/carrousel/carrousel-6.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-6' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/waqrapukara']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="nextRightSecond">
             <img src="/../../assets/image/carrousel/carrousel-7.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-7' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/polcoyo']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="hideRight">
             <img src="/../../assets/image/carrousel/carrousel-8.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-8' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.half-day' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.half-day' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/cuatrimoto']" routerLinkActive="router-link-active"  class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="hideRight">
             <img src="/../../assets/image/carrousel/carrousel-9.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-9' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/vallesur']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="hideRight">
             <img src="/../../assets/image/carrousel/carrousel-10.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-10' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center sonbra-3 color-1 titulo">{{ 'home.2day' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <!-- <p class="text-uppercase mb-0 text-center sonbra-3 color-1 fw-bold titulo cursiva">{{ 'home.2day' | translate }}</p> -->
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.2day' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/huchuyqosqo']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
           <div class="hideRight">
             <img src="/../../assets/image/carrousel/carrousel-11.jpg">
             <div class="container text-center mx-auto" id="text-1">
               <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.tour-11' | translate }}</h5>
-              <p class="text-uppercase mb-0 text-center color-1 sonbra-3 titulo">{{ 'home.full' | translate }}</p>
-              <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+              <p class="text-uppercase mb-0 text-center text-white fw-bold titulo cursiva">{{ 'home.full' | translate }}</p>
+              <p class="text-center"><a type="button" [routerLink]="['/bungee']"  class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
             </div>
           </div>
         </div>
@@ -390,85 +388,84 @@
               <img src="/../../assets/image/carrousel/c-1.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-1' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.full' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.full' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/machupicchu']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="hideLeft">
               <img src="/../../assets/image/carrousel/c-2.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-2' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.4day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva cursiva">{{ 'home.4day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/incajungla']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="prevLeftSecond">
               <img src="/../../assets/image/carrousel/c-3.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-3' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.4day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.4day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/real']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="prev">
               <img src="/../../assets/image/carrousel/c-4.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-4' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.2day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.2day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/caminoinca']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="selected">
               <img src="/../../assets/image/carrousel/c-5.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-5' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.5day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.5day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/salkantay']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="next">
               <img src="/../../assets/image/carrousel/c-6.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-6' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.4day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.4day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/salkantay2']" routerLinkActive="router-link-active"  class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="nextRightSecond">
               <img src="/../../assets/image/carrousel/c-7.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-7' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.2day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.2day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/mapibycar']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="hideRight">
               <img src="/../../assets/image/carrousel/c-8.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-8' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.2day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.2day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/esencia']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="hideRight">
               <img src="/../../assets/image/carrousel/c-9.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-9' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.2day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.2day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/amanecer1']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
             <div class="hideRight">
               <img src="/../../assets/image/carrousel/c-10.jpg">
               <div class="container text-center mx-auto" id="text-1">
                 <h5 class="titulo text-white fw-bold text-center sonbra-2">{{ 'home.excursion-10' | translate }}</h5>
-                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold">{{ 'home.4day' | translate }}</p>
-                <p class="text-center"><a type="button" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
+                <p class="text-uppercase titulo mb-0 text-center sonbra-3 color-1 fw-bold cursiva">{{ 'home.4day' | translate }}</p>
+                <p class="text-center"><a type="button" [routerLink]="['/larestrek']" class="boton-1 text-center">{{ 'home.tours-boton' | translate }}</a></p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
     <div class="container-fluid mb-5 pading-carrousel" id="destinos">
@@ -503,7 +500,7 @@
                 {{ 'home.destino-2' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.5day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/cuscoaventura']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -518,7 +515,7 @@
                 {{ 'home.destino-3' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.3day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/cuscofugaz']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -533,7 +530,7 @@
                 {{ 'home.destino-4' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.4day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/tours2']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -549,7 +546,7 @@
                 {{ 'home.destino-5' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.4day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/choquequirao']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -564,7 +561,7 @@
                 {{ 'home.destino-6' | translate }}              
               </h3>
               <p class="text-center fw-bold">{{ 'home.4day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/manu']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -579,7 +576,7 @@
                 {{ 'home.destino-7' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.2day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/islasfoltante']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -594,7 +591,7 @@
                 {{ 'home.destino-8' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.3day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/islasflotantes2']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -610,7 +607,7 @@
                 {{ 'home.destino-9' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.2day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/huacachina']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -625,7 +622,7 @@
                 {{ 'home.destino-10' | translate }}
               </h3>
               <p class="text-center fw-bold">{{ 'home.3day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/tourarequipa']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -640,7 +637,7 @@
                 {{ 'home.destino-11' | translate }}
               </h3>
               <p class="fw-bold text-center">{{ 'home.2day' | translate }}</p>
-              <button>
+              <button [routerLink]="['/cañoncolca2']">
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -655,7 +652,7 @@
                 {{ 'home.destino-12' | translate }}
               </h3>
               <p class="fw-bold text-center">{{ 'home.full' | translate }}</p>
-              <button>
+              <button [routerLink]="['/colcafd']" routerLinkActive="router-link-active" >
                 {{ 'home.boton-1' | translate }}
               </button>
             </figcaption>
@@ -665,7 +662,7 @@
     </div>
   </section>
 </section>
-<div class="container text-center my-0 py-0" style="margin-bottom: -2% !important;">
-  <h2 class="titulo fw-bold">{{ 'home.slogan' | translate }}</h2>
+<div class="container text-center my-0 py-0" style="margin-bottom: 8% !important; margin-top: 5% !important;">
+  <h2 class="titulo fw-bold">"{{ 'home.slogan' | translate }}"</h2>
 </div>
 <footer-web></footer-web>

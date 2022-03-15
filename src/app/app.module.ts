@@ -72,17 +72,53 @@ import { MonedaFormatoPipe } from './monedaFormato.pipe';
 import { StoreFirstGuard } from './storeFirst.guard';
 import { HomeWebComponent } from './Web/home.component';
 import { ToursWebComponent } from './Web/tours.component';
-import { PaquetesWebComponent } from './Web/paquetes.component';
+import { BungeeWebComponent } from './Web/bungee.component';
+import { CañoncolcaWebComponent } from './Web/cañoncolca.component';
+import { CuatrimotoWebComponent } from './Web/cuatrimoto.component';
+import { CitytourWebComponent } from './Web/citytour.component';
 import { ContactWebComponent } from './Web/contact.component';
 import { FooterWebComponent } from './Web/footer.component';
+import { VallesagradoWebComponent } from './Web/vallesagrado.component';
+import { Vallesagrado2WebComponent } from './Web/vallesagrado2.component';
+import { LagunahuamantayWebComponent } from './Web/lagunahuamantay.component';
+import { MachupicchuWebComponent } from './Web/machupicchu.component';
+import { SietecoloresWebComponent } from './Web/sietecolores.component';
+import { PolcoyoWebComponent } from './Web/polcoyo.component';
+import { VallesurWebComponent } from './Web/vallesur.component';
+import { WaqrapukaraWebComponent } from './Web/waqrapukara.component';
+import { Amanecer1WebComponent } from './Web/amanecer1.component';
+import { SalkantayWebComponent } from './Web/salkantay.component';
+import { Cañoncolca2WebComponent } from './Web/cañoncolca2.component';
+import { ChoquequiraoWebComponent } from './Web/choquequirao.component';
+import { CuscoaventuraWebComponent } from './Web/cuscoaventura.component';
+import { HuchuyqosqoWebComponent } from './Web/huchuyqosqo.component';
+import { IslasflotantesWebComponent } from './Web/islasflotantes.component';
+import { LarestrekWebComponent } from './Web/larestrek.component';
+import { MapibycarWebComponent } from './Web/mapibycar.component';
+import { TourarequipaWebComponent } from './Web/tourarequipa.component';
+import { CaminoincaWebComponent } from './Web/caminoinca.component';
+import { CuscofugazWebComponent } from './Web/cuscofugaz.component';
+import { Salkantay2WebComponent } from './Web/salkantay2.component';
+import { HuacachinaWebComponent } from './Web/huacachina.component';
+import { IncajunglaWebComponent } from './Web/incajungla.component';
+import { Islasflotantes2WebComponent } from './Web/islasflotantes2.component';
+import { ManuWebComponent } from './Web/manu.component';
+import { RealWebComponent } from './Web/real.component';
+import { EsenciaWebComponent } from './Web/esencia.component';
+import { WonderWebComponent } from './Web/wonder.component';
+import { Tours2WebComponent } from './Web/tours2.component';
 import { HeaderWebComponent } from './Web/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderPagesComponent, HeaderComponent, HabitacionesComponent, TotalSeleccionHabPipe, TotalHabitacionesPipe, TotalHuepedesHabPipe, MonedaFormatoPipe, ContactWebComponent,
-    CheckOutComponent, ProcessDialogComponent, DetalleOrdenComponent, DisponibilidadDialogComponent, HomeWebComponent, ToursWebComponent, FooterWebComponent, HeaderWebComponent, PaquetesWebComponent,
+    AppComponent, HeaderPagesComponent, HeaderComponent, HabitacionesComponent, TotalSeleccionHabPipe, TotalHabitacionesPipe, TotalHuepedesHabPipe, MonedaFormatoPipe, ContactWebComponent, PolcoyoWebComponent, 
+    CheckOutComponent, ProcessDialogComponent, DetalleOrdenComponent, DisponibilidadDialogComponent, HomeWebComponent, ToursWebComponent, FooterWebComponent, HeaderWebComponent, BungeeWebComponent, VallesurWebComponent,
+    CañoncolcaWebComponent, CuatrimotoWebComponent, CitytourWebComponent, VallesagradoWebComponent, Vallesagrado2WebComponent, LagunahuamantayWebComponent, MachupicchuWebComponent, SietecoloresWebComponent, WaqrapukaraWebComponent,
+    Amanecer1WebComponent, SalkantayWebComponent, Cañoncolca2WebComponent, ChoquequiraoWebComponent, CuscoaventuraWebComponent, HuchuyqosqoWebComponent, IslasflotantesWebComponent, LarestrekWebComponent, MapibycarWebComponent,
+    TourarequipaWebComponent, CaminoincaWebComponent, Tours2WebComponent, CuscofugazWebComponent, Salkantay2WebComponent, WonderWebComponent, HuacachinaWebComponent, EsenciaWebComponent, IncajunglaWebComponent, Islasflotantes2WebComponent,
+    ManuWebComponent, RealWebComponent,
   ],
   imports: [
     BrowserModule,
@@ -110,12 +146,44 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     RouterModule.forRoot([
       { path: "home", component: HomeWebComponent },
       { path: "tours", component: ToursWebComponent },
-      { path: "paquetes", component: PaquetesWebComponent },
+      { path: "tours2", component: Tours2WebComponent },
+      { path: "salkantay2", component: Salkantay2WebComponent },
+      { path: "caminoinca", component: CaminoincaWebComponent },
+      { path: "cuscofugaz", component: CuscofugazWebComponent },
+      { path: "wonder", component: WonderWebComponent },
+      { path: "huacachina", component: HuacachinaWebComponent },
+      { path: "esencia", component: EsenciaWebComponent },
+      { path: "incajungla", component: IncajunglaWebComponent },
+      { path: "islasflotantes2", component: Islasflotantes2WebComponent },
+      { path: "manu", component: ManuWebComponent },
+      { path: "real", component: RealWebComponent },
+      { path: "bungee", component: BungeeWebComponent },
+      { path: "colcafd", component: CañoncolcaWebComponent },
+      { path: "cuatrimoto", component: CuatrimotoWebComponent },
+      { path: "citytour", component: CitytourWebComponent },
       { path: "contact", component: ContactWebComponent },
+      { path: "vallesagrado", component: VallesagradoWebComponent},
+      { path: "vallesagrado2", component:Vallesagrado2WebComponent},
+      { path: "lagunahuamantay", component:LagunahuamantayWebComponent},
+      { path: "machupicchu", component:MachupicchuWebComponent},
+      { path: "polcoyo", component:PolcoyoWebComponent},
+      { path: "vallesur", component:VallesurWebComponent},
+      { path: "waqrapukara", component:WaqrapukaraWebComponent},
+      { path: "amanecer1", component:Amanecer1WebComponent},
+      { path: "salkantay", component:SalkantayWebComponent},
+      { path: "cañoncolca2", component:Cañoncolca2WebComponent},
+      { path: "sietecolores", component:SietecoloresWebComponent},
+      { path: "choquequirao", component:ChoquequiraoWebComponent},
+      { path: "cuscoaventura", component:CuscoaventuraWebComponent},
+      { path: "huchuyqosqo", component:HuchuyqosqoWebComponent},
+      { path: "islasfoltante", component:IslasflotantesWebComponent},
+      { path: "larestrek", component:LarestrekWebComponent},
+      { path: "mapibycar", component:MapibycarWebComponent},
+      { path: "tourarequipa", component:TourarequipaWebComponent},
       { path: "booking/:checkIn/:checkOut/:nroPersonas", component: HabitacionesComponent }, 
       { path: "checkout", component: CheckOutComponent, canActivate: [StoreFirstGuard] },
       { path: "orden-detail", component: DetalleOrdenComponent, canActivate: [StoreFirstGuard] },
-      { path: "**", redirectTo: "/home" }
+      {path : '' , redirectTo : '/home' , pathMatch : 'full'},
       ], {useHash: true}),
     NgbModule      
   ],

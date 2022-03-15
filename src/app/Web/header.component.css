@@ -73,6 +73,15 @@
 .fixed-top-wonder-panel-visible {
   visibility: visible !important;
 }
+.fondo-responsive{
+  background-color: transparent;
+}
+@media only screen and (min-width: 320px) and (max-width: 568px){
+  .fondo-responsive{
+    margin-top: -8px;
+    background-color: #08314f8c;
+  }
+}
 /* @media only screen and (min-width: 768px) and (max-width: 1024px){
     #panelMenu {
         height: 100px;
@@ -156,4 +165,12 @@
   .text-header {
     margin-left: 20.5% !important;
   }
+}
+.bg-header{
+  background-color: #0099da33;
+  background-size: cover;
+}
+.bg-none{
+  background-color: transparent;
+  background-size: cover;
 }

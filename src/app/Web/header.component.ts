@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, EventEmitter, Inject, Output } from "@angular/core";
+import { Component, EventEmitter, Inject, Output, OnDestroy } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 
 @Component({
@@ -7,7 +7,8 @@ import { TranslateService } from "@ngx-translate/core";
     templateUrl: "./header.component.html",
     styleUrls: ["./header.component.css"]
 })
-export class HeaderWebComponent {
+export class HeaderWebComponent implements OnDestroy{
+    public mostrar : boolean = true;
 
     @Output() dataEvent = new EventEmitter();
     
@@ -18,11 +19,17 @@ export class HeaderWebComponent {
         this.translate.use(lang);
         this.dataEvent.emit(lang); 
     }
+    
     home(){
         this.document.location.href = '/#/home';
         //window.location.reload();
     }
-
+    ocultar(value){
+        this.mostrar = value;
+    }
+    ngOnDestroy(): void {
+        console.log("Ondestroy ejecutado")
+    }
     // aboutus(){
     //     this.document.location.href = '/#/aboutus';
     //     //window.location.reload();

@@ -31,6 +31,12 @@
   font-family: text;
   color: black;
 }
+.text-justify{
+  text-align: justify !important;
+}
+.cursiva{
+  font-style: italic !important;
+}
 .text-gris{
   color: #787878 !important;
   font-weight: bold;
@@ -111,7 +117,45 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 568px){
   .margin-carrousel{
-      margin-top: -40%;
+      /* margin-top: -40%; */
+      margin-top: -8px;
+  }
+}
+.border-dt{
+  border-left: solid #dee2e6 1px;
+}
+@media only screen and (min-width: 1024px){
+  .border-dt{
+    border-left: none;
+  }
+}
+.border-btn{
+  border-right: none;
+}
+@media only screen and (max-width: 768px){
+  .border-btn{
+    border-right: solid #dee2e6 1px;
+  }
+}
+.border-dt2{
+  border-right: solid #dee2e6 1px;;
+}
+@media only screen and (max-width: 768px){
+  .border-dt2{
+    border-left: solid #dee2e6 1px;
+    border-right: solid #dee2e6 1px;
+  }
+}
+.fixed-top-lateral{
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.871);
+}
+@media only screen and (max-width: 768px){
+  .fixed-top-lateral{
+    position: relative;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.871);
   }
 }
 /* .focus{

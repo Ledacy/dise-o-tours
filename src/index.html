@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Plantilla</title>
+  <title>Wonder Tours</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/image/favicon.png">
 
   <!-- Template color -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
@@ -96,7 +96,9 @@
 
         if (window.scrollY > 700 && width > 768) {
           document.getElementById('mainMenu').classList.add('fixed-top-wonder', 'py-0');
+          // document.getElementById('lateral').classList.add('fixed-top-wonder');
 
+          document.getElementById('bg').classList.remove('bg-header');
           document.getElementById('logo-1').classList.add('d-none');
           document.getElementById('logo-2').classList.remove('d-none');
           document.getElementById('menu-1').classList.add('negro');
@@ -108,7 +110,8 @@
 
         } else {
           document.getElementById('mainMenu').classList.remove('fixed-top-wonder', 'py-3');
-
+          // document.getElementById('lateral').classList.remove('fixed-top-wonder');
+          document.getElementById('bg').classList.add('bg-header');
           document.getElementById('menu-1').classList.remove('negro');
           document.getElementById('menu-2').classList.remove('negro');
           document.getElementById('menu-3').classList.remove('negro');
@@ -120,12 +123,24 @@
       });
     });
     // $(window).scroll(function (event) {
-    //   var scrollLeft = $(window).scrollLeft();
-    //   var scrollTop = $(window).scrollTop();
-    //   console.log("Vertical " + scrollTop);
-    //   console.log("Horizontal " + scrollLeft);
-    // });
+    //  var scrollLeft = $(window).scrollLeft();
+    //  var scrollTop = $(window).scrollTop();
+    //  console.log("Vertical " + scrollTop);
+    //  console.log("Horizontal " + scrollLeft);
+    //  });
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener('scroll', function () {
 
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        if (window.scrollY > 650 && width < 768) {
+          document.getElementById('lateral').classList.add('fixed-top-lateral');
+
+        } else {
+          document.getElementById('lateral').classList.remove('fixed-top-lateral');
+        }
+      });
+    });
   </script>
 </body>
 
