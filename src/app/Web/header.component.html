@@ -12,10 +12,10 @@
         <div class="d-flex" id="navbarText">
           <ul class="navbar-nav d-flex justify-content-around lh-sm">
             <li class="nav-item active">
-              <a class="nav-link" id="menu-1"  [routerLink]="['/home']">{{ 'menu.inicio' | translate }}<span class="sr-only">(current)</span></a>
+              <a class="nav-link" id="menu-1" (click)="movePage(target)"  [routerLink]="['/home']">{{ 'menu.inicio' | translate }}<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="menu-2" [routerLink]="['/home']" href="#Machupicchu">{{ 'menu.day' | translate }}</a>
+              <a class="nav-link" id="menu-2" (click)="movePage(target)" [routerLink]="['/home']">{{ 'menu.day' | translate }}</a>
             </li>
             <!-- <li class="nav-item drop">
               <a class="nav-link text-white dropbtn" id="menu-2">{{ 'menu.day' | translate }}</a>
@@ -29,10 +29,10 @@
               </div>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" id="menu-3" [routerLink]="['/home']"  href="#Machupicchu">{{ 'menu.machupicchu' | translate }}</a>
+              <a class="nav-link" id="menu-3" (click)="movePage(target)" [routerLink]="['/home']">{{ 'menu.machupicchu' | translate }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="menu-4" [routerLink]="['/home']" href="#destinos">{{ 'menu.destino' | translate }}</a>
+              <a class="nav-link" id="menu-4" (click)="movePage(target)" [routerLink]="['/home']">{{ 'menu.destino' | translate }}</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">REVIEWS</a>
@@ -45,7 +45,7 @@
                 <small class="text-white fw-light" style="font-size: 13px;" id="texto-1"> {{ 'menu.texto' | translate }}</small> <span class="letter ms-1">903 502 502</span>
             </div>
             <li class="nav-item" id="aboutusMenu" style="position: relative;">
-              <a class="nav-link link-1" style="color:#083c61; font-weight: bold !important;" [routerLink]="['/contact']" routerLinkActive="activo">{{ 'menu.contacto' | translate }}</a>
+              <a class="nav-link link-1" style="color:#083c61; font-weight: bold !important;" (click)="movePage(target)" [routerLink]="['/contact']" routerLinkActive="activo">{{ 'menu.contacto' | translate }}</a>
             </li>
             <a (click)="ocultar(false); setLanguage('es')" class="px-1" style="padding-top: 1px; padding-bottom: 1.5px; margin-top: -1px; cursor: pointer;" *ngIf="mostrar"><img src="../../assets/image/iconos/es.png" alt=""></a>
             <!-- <a (click)="ocultar(false); setLanguage('es')" class="bg-1 text-white border px-1" style="padding-top: 1px; padding-bottom: 1.5px; margin-top: -1px;" *ngIf="mostrar"><small><i class="fas fa-globe me-1" style="font-size: 17px;"></i><span style="font-size: 14px !important;">ES</span></small></a> -->
@@ -63,3 +63,4 @@
     </div>
   </nav>
 </header>
+<div #target></div>

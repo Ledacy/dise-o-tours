@@ -96,7 +96,7 @@
 
         if (window.scrollY > 700 && width > 768) {
           document.getElementById('mainMenu').classList.add('fixed-top-wonder', 'py-0');
-          // document.getElementById('lateral').classList.add('fixed-top-wonder');
+          document.getElementById('sidebar').classList.add('top-lateral');
 
           document.getElementById('bg').classList.remove('bg-header');
           document.getElementById('logo-1').classList.add('d-none');
@@ -110,7 +110,7 @@
 
         } else {
           document.getElementById('mainMenu').classList.remove('fixed-top-wonder', 'py-3');
-          // document.getElementById('lateral').classList.remove('fixed-top-wonder');
+          document.getElementById('sidebar').classList.remove('top-lateral');
           document.getElementById('bg').classList.add('bg-header');
           document.getElementById('menu-1').classList.remove('negro');
           document.getElementById('menu-2').classList.remove('negro');
@@ -128,19 +128,22 @@
     //  console.log("Vertical " + scrollTop);
     //  console.log("Horizontal " + scrollLeft);
     //  });
-    document.addEventListener("DOMContentLoaded", function () {
-      window.addEventListener('scroll', function () {
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   window.addEventListener('scroll', function () {
 
-        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    //     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        if (window.scrollY > 650 && width < 768) {
-          document.getElementById('lateral').classList.add('fixed-top-lateral');
+    //     if (window.scrollY > 700 && width < 768) {
+    //       document.getElementById('sidebar').classList.add('top-lateral');
 
-        } else {
-          document.getElementById('lateral').classList.remove('fixed-top-lateral');
-        }
-      });
-    });
+    //     } else {
+    //       document.getElementById('sidebar').classList.remove('top-lateral');
+    //     }
+    //   });
+    // });
+    var sidebar = document.getElementById('sidebar');
+    Stickyfill.add(sidebar);
+
   </script>
 </body>
 

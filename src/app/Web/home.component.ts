@@ -12,4 +12,7 @@ export class HomeWebComponent {
     setLanguage(lang: string){
         this.translate.use(lang);
     }
+    move(el: HTMLElement){
+        el.scrollIntoView();
+    }
 }

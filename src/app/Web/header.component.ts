@@ -30,6 +30,9 @@ export class HeaderWebComponent implements OnDestroy{
     ngOnDestroy(): void {
         console.log("Ondestroy ejecutado")
     }
+    movePage(el: HTMLElement){
+        el.scrollIntoView();
+    }
     // aboutus(){
     //     this.document.location.href = '/#/aboutus';
     //     //window.location.reload();

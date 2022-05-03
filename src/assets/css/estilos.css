@@ -53,7 +53,7 @@
   letter-spacing: -0.8px;
 }
 .fs-7{
-  font-size: 20px;
+  font-size: 17px;
 }
 .fs-8{
   font-size: 18px;
@@ -146,18 +146,16 @@
     border-right: solid #dee2e6 1px;
   }
 }
-.fixed-top-lateral{
-  position: fixed;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.871);
+.top-lateral{
+  padding-top: 10%;
 }
-@media only screen and (max-width: 768px){
-  .fixed-top-lateral{
+/* @media only screen and (max-width: 768px){
+  .top-lateral{
     position: relative;
     top: 0;
     background-color: rgba(255, 255, 255, 0.871);
   }
-}
+} */
 /* .focus{
     overflow:hidden;
     filter: sepia(60%);
