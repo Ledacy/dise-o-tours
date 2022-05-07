@@ -33,6 +33,8 @@ export class HeaderWebComponent implements OnDestroy{
     movePage(el: HTMLElement){
         el.scrollIntoView();
     }
+    // desplazamiento(){
+    // }
     // aboutus(){
     //     this.document.location.href = '/#/aboutus';
     //     //window.location.reload();

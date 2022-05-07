@@ -7,7 +7,9 @@ import { TranslateService } from "@ngx-translate/core";
     styleUrls: ["./home.component.css"]
 })
 export class HomeWebComponent {
+    public id: string;
     constructor(private translate: TranslateService){
+
     }
     setLanguage(lang: string){
         this.translate.use(lang);

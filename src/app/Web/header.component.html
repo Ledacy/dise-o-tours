@@ -15,7 +15,7 @@
               <a class="nav-link" id="menu-1" (click)="movePage(target)"  [routerLink]="['/home']">{{ 'menu.inicio' | translate }}<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="menu-2" (click)="movePage(target)" [routerLink]="['/home']">{{ 'menu.day' | translate }}</a>
+              <a class="nav-link" id="menu-2" (click)="movePage(target)" data-target="A" [routerLink]="['/home']">{{ 'menu.day' | translate }}</a>
             </li>
             <!-- <li class="nav-item drop">
               <a class="nav-link text-white dropbtn" id="menu-2">{{ 'menu.day' | translate }}</a>
@@ -29,10 +29,10 @@
               </div>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" id="menu-3" (click)="movePage(target)" [routerLink]="['/home']">{{ 'menu.machupicchu' | translate }}</a>
+              <a class="nav-link" id="menu-3" href="#" data-target="B" [routerLink]="['/home']">{{ 'menu.machupicchu' | translate }}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="menu-4" (click)="movePage(target)" [routerLink]="['/home']">{{ 'menu.destino' | translate }}</a>
+              <a class="nav-link" id="menu-4" (click)="movePage(target)" data-target="C" [routerLink]="['/home']">{{ 'menu.destino' | translate }}</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">REVIEWS</a>
