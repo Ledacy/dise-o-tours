@@ -19,266 +19,276 @@
     </button>
   </div>
 </header>
-<section class="page-wrapper">
-  <section class="container-fluid w-100 px-0">
-    <div class="shadow py-2" style="padding: 0 10%;">
-      <div class="row d-flex align-items-md-center justify-content-sm-center">
-        <div class="col-lg-3 col-md-4 col-6 py-0 border-end">
-          <div class="d-flex bd-highlight align-items-center py-5">
-            <div class="flex-fill bd-highlight"><i class="fas fa-clock fs-1 color-1"></i></div>
-            <div class="flex-fill bd-highlight" style="margin-top: -15px;">
-              <p class="mb-0 text-dark text fw-bold">{{ 'titulo-1' | translate }}</p>
-              <h5 class="mt-n3 fs-7 fw-bold titulo">{{ 'tour9-time' | translate }}</h5>
+<section class="container-fluid w-100 px-0">
+  <div class="shadow py-2" style="padding: 0 10%;">
+    <div class="row d-flex align-items-md-center justify-content-sm-center">
+      <div class="col-lg-3 col-md-4 col-6 py-0 border-end">
+        <div class="d-flex bd-highlight align-items-center py-5">
+          <div class="flex-fill bd-highlight"><i class="fas fa-clock fs-1 color-1"></i></div>
+          <div class="flex-fill bd-highlight" style="margin-top: -15px;">
+            <p class="mb-0 text-dark text fw-bold">{{ 'titulo-1' | translate }}</p>
+            <h5 class="mt-n3 fs-7 fw-bold titulo">{{ 'tour9-time' | translate }}</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 border-end border-sm-0">
+        <div class="d-flex bd-highlight align-items-center py-5">
+          <div class="flex-fill bd-highlight"><i class="fas fa-map-marked-alt fs-1 color-1"></i></div>
+          <div class="flex-fill bd-highlight" style="margin-top: -15px;">
+            <p class="mb-0 text-dark lh-sm text fw-bold">{{ 'titulo-2' | translate }}</p>
+            <h6 class="mt-n3 fs-7 fw-bold titulo"><small>{{ 'tour9-lugar' | translate }}</small></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6 border-end">
+        <div class="d-flex bd-highlight align-items-center py-5">
+          <div class="flex-fill bd-highlight"><i class="fas fa-industry fs-1 color-1"></i></div>
+          <div class="flex-fill bd-highlight text-start" style="margin-top: -15px;">
+            <p class="mb-0 text-dark text fw-bold">{{ 'titulo-3' | translate }}</p>
+            <h5 class="mt-n3 fs-7 fw-bold titulo">3600 m.s.n.m.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="d-flex bd-highlight align-items-center py-5">
+          <div class="flex-fill bd-highlight"><i class="fas fa-hiking fs-1 color-1"></i></div>
+          <div class="flex-fill bd-highlight" style="margin-top: -15px;">
+            <p class="mb-0 text-dark text fw-bold">{{ 'titulo-5' | translate }}</p>
+            <h5 class="mt-n3 fs-7 fw-bold titulo">Tiene un 2</h5>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+  <article class="container-fluid">
+    <div class="wrapper cf">
+      <div id="sidebar" class="sidebar">
+        <div class="px-lg-5 px-1">
+          <ul class="nav flex-column text">
+            <li class="nav-item">
+              <a class="nav-link color-1" href="#descripcion"><i
+                  class="fas fa-list fs-3 me-2"></i><small>{{ 'menu-1' | translate }}</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-1" href="#descripcion"><i
+                  class="fas fa-calendar-week fs-3 me-2"></i><small>{{ 'menu-2' | translate }}</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-1" href="#incluido"><i
+                  class="fas fa-check-circle fs-3 me-2"></i><small>{{ 'menu-3' | translate }}</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-1" href="#noincluido"><i
+                  class="fas fa-times-circle fs-3 me-2"></i><small>{{ 'menu-4' | translate }}</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-1" href="#recomendaciones"><i
+                  class="fas fa-tag fs-3 me-2"></i><small>{{ 'menu-5' | translate }}</small></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-1" href="#galeria"><i
+                  class="fas fa-image fs-3 me-2"></i><small>{{ 'menu-6' | translate }}</small></a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <a type="button" [routerLink]="['/contact']" routerLinkActive="router-link-active"
+              class="btn btn-1">{{ 'btn-menu' | translate }}</a>
+            <p class="fw-bold color-1 mt-2 mb-0">{{ 'text-menu' | translate }}</p>
+            <a class="nav-link color-1 d-flex align-items-center text text-center"
+              href="https://wa.me/51903502502?text=Me%20gustaría%20saber%20sobre%20el%20tour" target="_blank"
+              style="margin-top: -12px;"><i class="fa fa-phone-alt fs-4 me-3"></i><span class="mt-n1">+51 903 502
+                502</span></a>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.facebook.com/Wonder-Routes-Peru-109363771645633" target="_blank"><i
+                  class="fab fa-facebook-square fs-1 mx-2 text-primary"></i></a>
+              <a href="https://www.instagram.com/wonderroutesperu/" target="_blank"><i
+                  class="fab fa-instagram-square fs-1 mx-2 text-danger"></i></a>
+              <a href="https://twitter.com/wonder_routes" target="_blank"><i
+                  class="fab fa-twitter-square fs-1 mx-2 text-info"></i></a>
+              <a href="https://www.youtube.com/channel/UCPgyD_9Y_4aBjK6It6VVYmQ" target="_blank"><i
+                  class="fas fa-envelope-square fs-1 mx-2 text-warning"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-6 border-end border-sm-0">
-          <div class="d-flex bd-highlight align-items-center py-5">
-            <div class="flex-fill bd-highlight"><i class="fas fa-map-marked-alt fs-1 color-1"></i></div>
-            <div class="flex-fill bd-highlight" style="margin-top: -15px;">
-              <p class="mb-0 text-dark lh-sm text fw-bold">{{ 'titulo-2' | translate }}</p>
-              <h6 class="mt-n3 fs-7 fw-bold titulo"><small>{{ 'tour9-lugar' | translate }}</small></h6>
+      </div>
+      <div class="content">
+        <h3 class="mt-5 mb-3 fw-bold titulo" id="descripcion">{{ 'tour9-nombre' | translate }}</h3>
+        <div class="cotainer px-3">
+          <h3 class="mt-5 fw-bold titulo">{{ 'titulo-6' | translate }}</h3>
+          <p class="text"><small>{{ 'tour9-descripcion' | translate }}</small></p>
+        </div>
+        <!-- sección de los accordiones -->
+        <h4 class="mt-5 fw-bold titulo ps-3">{{ 'titulo-4' | translate }}</h4>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header text" id="heading-1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1" aria-expanded="false" aria-controls="accordion-1">
+                <strong class="color-1">{{ 'dia1' | translate }} :  {{ 'tour9_titulo-dia1' | translate }}</strong>
+              </button>
+            </h2>
+            <div id="accordion-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text">
+                <p class="text-justify"><small>{{ 'tour9-dia1' | translate }}</small></p>
+                <p class="text-justify"><small>{{ 'tour9-dia1.1' | translate }}</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header text" id="heading-2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-2" aria-expanded="false" aria-controls="accordion-1">
+                <strong class="color-1">{{ 'dia2' | translate }} :  {{ 'tour9_titulo-dia2' | translate }}</strong>
+              </button>
+            </h2>
+            <div id="accordion-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text">
+                <p class="text-justify"><small>{{ 'tour9-dia2' | translate }}</small></p>
+                <p class="text-justify"><small>{{ 'tour9-dia2.1' | translate }}</small></p>
+              </div>
+            </div>
+          </div>
+          <!-- final de los acordiones -->
+          <h3 class="mt-5 fw-bold titulo" id="incluido">{{ 'fd-incluido' | translate }}</h3>
+          <ul class="nav flex-column text">
+            <li class="nav-item mt-2 px-3">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido1' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido2' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido3' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido4' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido5' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido6' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido7' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i
+                  class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido8' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour-incluido1' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'fd-incluido2' | translate }}</small>
+              </p>
+            </li>
+          </ul>
+          <h3 class="mt-5 fw-bold titulo" id="noicluido">{{ 'fd-noincluido' | translate }}</h3>
+          <ul class="nav flex-column text">
+            <li class="nav-item mt-2 px-3">
+              <p><i
+                  class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-noincluido1' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-noincluido2' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-noincluido3' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'noincluido2' | translate }}</small>
+              </p>
+            </li>
+            <li class="nav-item px-3" style="margin-top: -10px;">
+              <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'noincluido1' | translate }}</small>
+              </p>
+            </li>
+          </ul>
+          <h3 class="mt-5 fw-bold titulo" id="recomendaciones">{{ 'fd-recomendaciones' | translate }}</h3>
+          <ul class="nav flex-column text">
+            <li class="nav-item mt-2 px-3">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-8' | translate }}</small></p>
+            </li>
+            <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-1' | translate }}</small></p>
+            </li>
+            <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-2' | translate }}</small></p>
+            </li>
+            <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-3' | translate }}</small></p>
+            </li>
+            <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-4' | translate }}</small></p>
+            </li>
+            <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-5' | translate }}</small></p>
+            </li>
+            <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-6' | translate }}</small></p>
+            </li>
+            <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
+              <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-7' | translate }}</small></p>
+            </li>
+          </ul>
+          <h3 class="mt-5 fw-bold titulo">{{ 'lugares' | translate }}</h3>
+          <ul class="nav flex-column mt-2 text px-3">
+            <li class="nav-item">
+              <p class="mb-1"><i
+                  class="fas fa-map-marker-alt fs-5 me-3 color-1"></i><small>{{ 'tour9-lugares1' | translate }}</small>
+              </p>
+              <p class="mb-1"><i
+                  class="fas fa-map-marker-alt fs-5 me-3 color-1"></i><small>{{ 'tour9-lugares2' | translate }}</small>
+              </p>
+              <p class="mb-1"><i
+                  class="fas fa-map-marker-alt fs-5 me-3 color-1"></i><small>{{ 'tour9-lugares3' | translate }}</small>
+              </p>
+            </li>
+          </ul>
+          <div class="mt-5" id="galeria">
+            <h3 class="fw-bold titulo">{{ 'fd-galeria' | translate }}</h3>
+            <div class="container mt-2">
+              <div class="carousel carousel-main" data-flickity>
+                <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 3 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 4 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 5 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
+              </div>
+              <div class="carousel carousel-nav"
+                data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+                <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 3 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 4 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 5 .jpg" class="carousel-cell">
+                <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-6 border-end">
-          <div class="d-flex bd-highlight align-items-center py-5">
-            <div class="flex-fill bd-highlight"><i class="fas fa-industry fs-1 color-1"></i></div>
-            <div class="flex-fill bd-highlight text-start" style="margin-top: -15px;">
-              <p class="mb-0 text-dark text fw-bold">{{ 'titulo-3' | translate }}</p>
-              <h5 class="mt-n3 fs-7 fw-bold titulo">3600 m.s.n.m.</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="d-flex bd-highlight align-items-center py-5">
-            <div class="flex-fill bd-highlight"><i class="fas fa-hiking fs-1 color-1"></i></div>
-            <div class="flex-fill bd-highlight" style="margin-top: -15px;">
-              <p class="mb-0 text-dark text fw-bold">{{ 'titulo-5' | translate }}</p>
-              <h5 class="mt-n3 fs-7 fw-bold titulo">Tiene un 2</h5>
-            </div>
-          </div>
-         </div>
       </div>
     </div>
-    <article class="w-100">
-      <div class="row py-5 px-3">
-        <div class="col-lg-3 col-md-4 col-12 border-md-end border-0" style="padding-left: 5%; position: relative; z-index: 1;">
-          <div id="lateral">
-            <ul class="nav flex-column text">
-              <li class="nav-item">
-                <a class="nav-link color-1" href="#descripcion"><i class="fas fa-list fs-3 me-2"></i><small>{{ 'menu-1' | translate }}</small></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-1" href="#descripcion"><i class="fas fa-calendar-week fs-3 me-2"></i><small>{{ 'menu-2' | translate }}</small></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-1" href="#noincluido"><i class="fas fa-check-circle fs-3 me-2"></i><small>{{ 'menu-3' | translate }}</small></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-1" href="#noincluido"><i class="fas fa-times-circle fs-3 me-2"></i><small>{{ 'menu-4' | translate }}</small></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-1" href="#recomendaciones"><i class="fas fa-tag fs-3 me-2"></i><small>{{ 'menu-5' | translate }}</small></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link color-1" href="#galeria"><i class="fas fa-image fs-3 me-2"></i><small>{{ 'menu-6' | translate }}</small></a>
-              </li>
-            </ul>
-            <div class="text-center">
-              <a type="button" [routerLink]="['/contact']" routerLinkActive="router-link-active"  class="btn btn-1">{{ 'btn-menu' | translate }}</a>
-              <p class="fw-bold color-1 mt-2 mb-0">{{ 'text-menu' | translate }}</p>
-              <a class="nav-link color-1 d-flex align-items-center text" href="https://wa.me/51903502502?text=Me%20gustaría%20saber%20sobre%20el%20tour" target="_blank" style="margin-top: -12px;"><i class="fa fa-phone-alt fs-4 me-3"></i><span class="mt-n1">+51 903 502 502</span></a>
-              <div class="d-flex justify-content-center">
-                <a  href="https://www.facebook.com/Wonder-Routes-Peru-109363771645633" target="_blank"><i class="fab fa-facebook-square fs-1 mx-2 text-primary"></i></a>
-                <a  href="https://www.instagram.com/wonderroutesperu/" target="_blank"><i class="fab fa-instagram-square fs-1 mx-2 text-danger"></i></a>
-                <a  href="https://twitter.com/wonder_routes" target="_blank"><i class="fab fa-twitter-square fs-1 mx-2 text-info"></i></a>
-                <a  href="https://www.youtube.com/channel/UCPgyD_9Y_4aBjK6It6VVYmQ" target="_blank"><i class="fas fa-envelope-square fs-1 mx-2 text-warning"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-9 col-md-8 col-12 text-start lh-sm" style="padding-right: 5%;">
-          <h3 class="mt-5 mb-3 fw-bold titulo" id="descripcion">{{ 'tour9-nombre' | translate }}</h3>
-          <div class="cotainer px-3">
-            <h3 class="mt-5 fw-bold titulo">{{ 'titulo-6' | translate }}</h3>
-            <p class="text"><small>{{ 'tour9-descripcion' | translate }}</small></p>
-          </div>
-          <!-- sección de los accordiones -->
-          <h4 class="mt-5 fw-bold titulo ps-3">{{ 'titulo-4' | translate }}</h4>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header text" id="heading-1">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1" aria-expanded="false" aria-controls="accordion-1">
-                  <strong class="color-1">{{ 'dia1' | translate }} :  {{ 'tour9_titulo-dia1' | translate }}</strong>
-                </button>
-              </h2>
-              <div id="accordion-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body text">
-                  <p class="text-justify"><small>{{ 'tour9-dia1' | translate }}</small></p>
-                  <p class="text-justify"><small>{{ 'tour9-dia1.1' | translate }}</small></p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header text" id="heading-2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#accordion-2" aria-expanded="false" aria-controls="accordion-1">
-                  <strong class="color-1">{{ 'dia2' | translate }} :  {{ 'tour9_titulo-dia2' | translate }}</strong>
-                </button>
-              </h2>
-              <div id="accordion-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body text">
-                  <p class="text-justify"><small>{{ 'tour9-dia2' | translate }}</small></p>
-                  <p class="text-justify"><small>{{ 'tour9-dia2.1' | translate }}</small></p>
-                </div>
-              </div>
-            </div>
-            <!-- final de los acordiones -->
-            <h3 class="mt-5 fw-bold titulo" id="incluido">{{ 'fd-incluido' | translate }}</h3>
-            <ul class="nav flex-column text">
-              <li class="nav-item mt-2 px-3">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido1' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido2' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido3' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido4' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido5' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido6' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido7' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i
-                    class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-incluido8' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'tour-incluido1' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i class="far fa-check-circle fs-4 me-3 color-1"></i><small>{{ 'fd-incluido2' | translate }}</small>
-                </p>
-              </li>
-            </ul>
-            <h3 class="mt-5 fw-bold titulo" id="noicluido">{{ 'fd-noincluido' | translate }}</h3>
-            <ul class="nav flex-column text">
-              <li class="nav-item mt-2 px-3">
-                <p><i
-                    class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-noincluido1' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-noincluido2' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'tour9-noincluido3' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'noincluido2' | translate }}</small>
-                </p>
-              </li>
-              <li class="nav-item px-3" style="margin-top: -10px;">
-                <p><i class="far fa-times-circle fs-4 me-3 color-1"></i><small>{{ 'noincluido1' | translate }}</small>
-                </p>
-              </li>
-            </ul>
-            <h3 class="mt-5 fw-bold titulo" id="recomendaciones">{{ 'fd-recomendaciones' | translate }}</h3>
-            <ul class="nav flex-column text">
-              <li class="nav-item mt-2 px-3">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-8' | translate }}</small></p>
-              </li>
-              <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-1' | translate }}</small></p>
-              </li>
-              <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-2' | translate }}</small></p>
-              </li>
-              <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-3' | translate }}</small></p>
-              </li>
-              <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-4' | translate }}</small></p>
-              </li>
-              <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-5' | translate }}</small></p>
-              </li>
-              <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-6' | translate }}</small></p>
-              </li>
-              <li class="nav-item mt-2 px-3" style="margin-top: -10px !important;">
-                <p><i class="fas fa-tag fs-5 me-3 color-1"></i><small>{{ 'tour_recomendacion-7' | translate }}</small></p>
-              </li>
-            </ul>
-            <h3 class="mt-5 fw-bold titulo">{{ 'lugares' | translate }}</h3>
-            <ul class="nav flex-column mt-2 text px-3">
-              <li class="nav-item">
-                <p class="mb-1"><i
-                    class="fas fa-map-marker-alt fs-5 me-3 color-1"></i><small>{{ 'tour9-lugares1' | translate }}</small>
-                </p>
-                <p class="mb-1"><i
-                    class="fas fa-map-marker-alt fs-5 me-3 color-1"></i><small>{{ 'tour9-lugares2' | translate }}</small>
-                </p>
-                <p class="mb-1"><i
-                    class="fas fa-map-marker-alt fs-5 me-3 color-1"></i><small>{{ 'tour9-lugares3' | translate }}</small>
-                </p>
-              </li>
-            </ul>
-            <div class="mt-5" id="galeria">
-              <h3 class="fw-bold titulo">{{ 'fd-galeria' | translate }}</h3>
-              <div class="container mt-2">
-                <div class="carousel carousel-main" data-flickity>
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 3 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 4 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 5 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
-                </div>
-                <div class="carousel carousel-nav"
-                  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 3 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 4 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 5 .jpg" class="carousel-cell">
-                  <img src="../../assets/image/gallery/Huchuy Qosqo 2 .jpg" class="carousel-cell">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  </article>
+</section>
 
-      </div>
-    </article>
-  </section>
-</section>
-<section class="container">
-</section>
 <footer-web></footer-web>
