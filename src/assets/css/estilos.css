@@ -236,6 +236,22 @@
     top: 15px;
   }
 }
+.btn-tours{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px 13px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: #083C61;
+}
+.btn-tours:hover{
+  color: #083C61;
+  background-color: #fff;
+  border: 1px solid #083C61;
+  font-weight: bolder;
+  text-decoration: none;
+}
 /* @media only screen and (max-width: 768px){
   .top-lateral{
     position: relative;
