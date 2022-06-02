@@ -157,13 +157,13 @@
 
 @media only screen and (min-width: 1025px) and (max-width: 1380px) {
   .text-header {
-    margin-left: 19% !important;
+    margin-left: 18% !important;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .text-header {
-    margin-left: 20.5% !important;
+    margin-left: 19.5% !important;
   }
 }
 /* .bg-header{

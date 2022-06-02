@@ -190,7 +190,11 @@
   "importante-2": "Full tourist ticket for foreigners: S/.130.00 nuevos soles",
   "importante-3": "Peruvian full tourist ticket S/.70.00 nuevos soles",
   "importante-4": "The full tourist ticket is valid for 10 days and allows entrance to most of the Inca sites around Cusco and the Sacred Valley (16 sites). This is a better option if you plan to combine also the city tour or visit any of the archaeological sites outside the Sacred Valley in Cusco. An alternative option is to buy a partial tourist ticket which costs S/.70.00 nuevos soles (foreigners) and S/ 40.00 nuevos soles (Peruvian), this is valid for 1 day and will allow entrance to all the sites of the City Tour.",
-
+  
+  "<--dificultad de los tours-->": "vacio",
+  "facil": "Accessible",
+  "moderado": "Moderate",
+  "dificil": "Challenging",
 
   "<--estructura textos de los tours full day-->": "vacio",
 

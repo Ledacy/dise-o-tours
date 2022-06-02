@@ -57,10 +57,12 @@
 .formularios >div label{
 color: #173540;
 font-weight: bolder;
+margin-bottom: 0!important;
 }
 .input-1{
   border: 0;
   background-color: transparent;
   border-radius: 0;
+  margin-top: -25px !important;
   border-bottom: 1.5px solid #173540;
 }
