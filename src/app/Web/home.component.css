@@ -177,8 +177,8 @@
   display: block;
 }
 /* #text-1.ho{
-position: absolute; 
-margin-top: -30%; 
+position: absolute;
+margin-top: -30%;
 z-index: 100;
 background-color: black;
 width: 100%;
@@ -385,3 +385,5 @@ width: 100%;
   font-size: 14px;
   text-align: center !important;
 }
+/* prueba de marcador de desplazamiento */
+

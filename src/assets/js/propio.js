@@ -27,7 +27,6 @@ function moveToSelected(element) {
 
 }
 
-// Eventos teclado
 $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
@@ -55,14 +54,6 @@ $('#next').click(function() {
  moveToSelected('next');
 });
 
-// $('#prev').hover(function() {
-//   moveToSelected('prev');
-// });
-
-// $('#next').click(function() {
-//  moveToSelected('next');
-// });
-
- document.getElementById('#carousel div').addEventListener('hover', function() {
- document.getElementById('#text-1').classList.toggle('hide');
-})
+//  document.getElementById('#carousel div').addEventListener('hover', function() {
+//  document.getElementById('#text-1').classList.toggle('hide');
+// })
