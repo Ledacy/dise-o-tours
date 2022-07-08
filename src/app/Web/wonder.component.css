@@ -1,66 +1,141 @@
-.filto-1{
-  filter:brightness(0.4) !important; 
-  z-index: 0;
+.ruleta {
+  width: 400px;
+  height: calc(600px - 150px);
+  margin: auto;
+  overflow: hidden;
+  font-size: 0;
+  position: relative;
+  text-align: left;
 }
-.carrousel-top{
-  top: 30%;
-  z-index: 1;
-}
-@media only screen and (max-width: 600px) {
-  .carrousel-top {
-    top: 20% !important;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .carrousel-top {
-    top: 30% !important;
-  }
-}
-@media only screen and (max-width: 1024) {
-  .carrousel-top {
-    top: 30% !important;
-  }
-}
-.carousel {
-  background: #FAFAFA;
-  margin-bottom: 40px;
-}
-
-.carousel-cell {
+.ruleta .pantalla {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   width: 100%;
-  height: 350px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
+  height: 100%;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  transform: translate(0%, -30%);
 }
-
-/* cell number */
-.carousel-cell:before {
-  display: block;
+.ruleta .pantalla > li {
+  width: 0%;
+  height: 100%;
+  width: 50%;
+  height: 60%;
+  display: inline-block;
+  font-size: 15px;
+  overflow: hidden;
+  background: #bbb;
+  border-radius: 0;
+  opacity: 0;
+  filter: blur(5px);
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  transform: translate(50%, 0);
+  transition: all 0.7s;
+  pointer-events: none;
+}
+.ruleta .pantalla > li:hover {
+  filter: none;
+  opacity: 1;
+}
+.ruleta .pantalla > li.active {
+  opacity: 1;
+  filter: none;
+  width: 70%;
+  height: 70%;
+  z-index: 100;
+  transform: none;
+  transform: translate(20%, 0);
+}
+.ruleta .pantalla > li.active,
+.ruleta .pantalla > li.left,
+.ruleta .pantalla > li.right {
+  pointer-events: all;
+}
+.ruleta .pantalla > li.left,
+.ruleta .pantalla > li.right {
+  transform: translate(0%, 0);
+  opacity: 0.5;
+}
+.ruleta .pantalla > li.left {
+  transform: translate(0%, 0);
+}
+.ruleta .pantalla > li.right {
+  transform: translate(100%, 0);
+}
+.ruleta .pantalla > li p {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  display: flex;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  pointer-events: none;
 }
-
-.carousel-nav .carousel-cell {
-  height: 80px;
-  width: 100px;
+.ruleta .marca {
+  list-style: none;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-
-.carousel-nav .carousel-cell:before {
-  font-size: 50px;
-  line-height: 80px;
+.ruleta .marca li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  opacity: 0.3;
+  cursor: pointer;
+  background: #000;
+  border-radius: 100%;
+  transition: all 0.2s;
+  background-size: cover;
+  background-position: center;
 }
-
-.carousel-nav .carousel-cell.is-nav-selected {
-  background: #ED2;
+.ruleta .marca li:hover,
+.ruleta .marca li.active {
+  opacity: 1;
 }
-.fixed-top-wonder {
-  position: fixed;
-  z-index: -100 !important;
-  top: 150px;
+#s1 {
+  background-image: url(/../../assets/image/carrousel/c-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#s2 {
+  background-image: url(https://doocode.xyz/res/img/backgrounds/DCG33.png);
+  background-size: cover;
+  background-position: center;
+}
+#s3 {
+  background-image: url(https://doocode.xyz/res/img/backgrounds/DCG32.png);
+  background-size: cover;
+  background-position: center;
+}
+#s4 {
+  background-image: url(https://doocode.xyz/res/img/backgrounds/DCG31.png);
+  background-size: cover;
+  background-position: center;
+}
+#s5 {
+  background-image: url(https://doocode.xyz/res/img/backgrounds/DCG30.png);
+  background-size: cover;
+  background-position: center;
+}
+#s6 {
+  background-image: url(https://doocode.xyz/res/img/backgrounds/DCG29.png);
+  background-size: cover;
+  background-position: center;
+}
+#s7 {
+  background-image: url(https://doocode.xyz/res/img/backgrounds/DCG28.png);
+  background-size: cover;
+  background-position: center;
 }
